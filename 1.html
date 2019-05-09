@@ -5,17 +5,22 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>
-        var random1 = Math.floor(Math.random() * 1);
-        var a = document.getElementById("rd1")
-        var a = document.getElementById("rd2")
-        var a = document.getElementById("rd3")
-        var a = document.getElementById("rd4")
+        function botton1pressed() {
+            var random1 = Math.floor(Math.random() * 1);
+            var a = random1.getElementById("rd1").value;
+            var b = document.getElementById("rd2").value;
+            b = random1
+            var c = document.getElementById("rd3").value;
+            c = random1
+            var d = document.getElementById("rd4").value;
+            d = random1
+        }
     </script>
 </head>
 
 <body>
     <button onclick="botton1pressed()">2進数</button>
-    <input id="rd1" type="text">\
+    <input id="rd1" type="text">
     <input id="rd2" type="text">
     <input id="rd3" type="text">
     <input id="rd4" type="text">
