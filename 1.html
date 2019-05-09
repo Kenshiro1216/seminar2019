@@ -6,14 +6,24 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>
         function botton1pressed() {
-            var random1 = Math.floor(Math.random() * 1);
-            var a = random1.getElementById("rd1").value;
-            var b = document.getElementById("rd2").value;
-            b = random1
-            var c = document.getElementById("rd3").value;
-            c = random1
-            var d = document.getElementById("rd4").value;
-            d = random1
+            var random1 = Math.floor(Math.random() * 2);
+            var random2 = Math.floor(Math.random() * 2);
+            var random3 = Math.floor(Math.random() * 2);
+            var random4 = Math.floor(Math.random() * 2);
+            var a = random1;
+            document.getElementById("rd1").value = a;
+            var b = random2;
+            document.getElementById("rd2").value = b;
+            var c = random3;
+            document.getElementById("rd3").value = c;
+            var d = random4;
+            document.getElementById("rd4").value = d;
+        }
+        function botton2pressed() {
+            var e = document.getElementById("rd5").value;
+            e = Number(e)
+            var f = c + d;
+            document.getElementById("rd6").value = f;
         }
     </script>
 </head>
@@ -26,6 +36,12 @@
     <input id="rd4" type="text">
     <hr>
     <p id="result"></p>
+
+    <h1>これを10進数に表すと</h1>
+    <input id="rd5" type="text">
+    <button onclick="botton2pressed()">判定</button>
+    <input id="rd6" type="text">
+
 </body>
 
 </html>
