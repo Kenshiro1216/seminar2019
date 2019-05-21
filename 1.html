@@ -5,27 +5,39 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>
+        var e;
+
         function botton1pressed() {
             var random1 = Math.floor(Math.random() * 2);
             var random2 = Math.floor(Math.random() * 2);
             var random3 = Math.floor(Math.random() * 2);
             var random4 = Math.floor(Math.random() * 2);
             var a = random1;
-            document.getElementById("rd1").value = a;
             var b = random2;
-            document.getElementById("rd2").value = b;
             var c = random3;
-            document.getElementById("rd3").value = c;
             var d = random4;
+
+            document.getElementById("rd1").value = a;
+            document.getElementById("rd2").value = b;
+            document.getElementById("rd3").value = c;
             document.getElementById("rd4").value = d;
-            var e = a * 8 + b * 4 + c * 2 + d;
-            document.getElementById("rd5").value = e;
+            e = a * 8 + b * 4 + c * 2 + d;
         }
+
+        function botton2pressed() {
+
+            document.getElementById("rd5").value = e;
+
+        }
+
+        var f = document.getElementById("rd6").value;
+        f = Number(f);
+
     </script>
 </head>
 
 <body>
-    <button onclick="botton1pressed()">2進数</button>
+    <button onclick="botton1pressed()">生成！</button>
     <input id="rd1" type="text">
     <input id="rd2" type="text">
     <input id="rd3" type="text">
@@ -33,6 +45,7 @@
 
 
     <h1>これを10進数に表すと</h1>
+    <button onclick="botton2pressed()">計算</button>
     <input id="rd5" type="text">
     <hr>
     <p id="result"></p>
