@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+function button1Pressed(){
+    var random=Math.random();
+    random=random*100;
+    random=Math.floor(random);
+    if (random>80){
+        random="大吉"
+    }
+    if (random>60){
+        random="中吉"
+    }
+    if (random>40){
+        random="小吉"
+    }
+    if (random>20){
+        random="凶"
+    }
+    if (random>0){
+        random="大凶"
+    }
+    document.getElementById("yyyyy").innerHTML=random;
+}
+
+
+    </script>
+</head>
+
+<body>
+    <button onclick="button1Pressed()">X</button>
+    <button onclick="button2Pressed()">Y</button>
+    <hr>
+    <p id="yyyyy">今日のあなたの運勢は</p>
+</body>
+
+</html>
