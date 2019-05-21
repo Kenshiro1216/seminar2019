@@ -18,12 +18,8 @@
             document.getElementById("rd3").value = c;
             var d = random4;
             document.getElementById("rd4").value = d;
-        }
-        function botton2pressed() {
-            var e = document.getElementById("rd5").value;
-            e = Number(e)
-            var f = c + d;
-            document.getElementById("rd6").value = f;
+            var e = a * 8 + b * 4 + c * 2 + d;
+            document.getElementById("rd5").value = e;
         }
     </script>
 </head>
@@ -34,14 +30,12 @@
     <input id="rd2" type="text">
     <input id="rd3" type="text">
     <input id="rd4" type="text">
-    <hr>
-    <p id="result"></p>
+
 
     <h1>これを10進数に表すと</h1>
     <input id="rd5" type="text">
-    <button onclick="botton2pressed()">判定</button>
-    <input id="rd6" type="text">
-
+    <hr>
+    <p id="result"></p>
 </body>
 
 </html>
