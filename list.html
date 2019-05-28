@@ -5,23 +5,17 @@
     <meta charset="utf-8">
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>
-        var list = "";
-        list = list + "<ul>";
-        list = list + "<li>";
-        list = list + 1;
-        list = list + "</li>";
-        list = list + "<li>";
-        list = list + 2;
-        list = list + "</li>";
-        list = list + "<li>";
-        list = list + 3;
-        list = list + "</li>";
-        list = list + "</ul>";
         function button1Pressed() {
+            var list = "";
+            list = list + "<ul>";
+            for (var i = 1; i <= 4; i++) {
+                list = list + "<li>" + i + "</li>";
+            }
+            list = list + "</ul>";
             document.getElementById("result").innerHTML = list;
-
-
         }
+
+
     </script>
 </head>
 
