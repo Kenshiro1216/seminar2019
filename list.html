@@ -6,10 +6,21 @@
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script>
         var list = "";
-        list = "<ul>";
+        list = list + "<ul>";
+        list = list + "<li>";
+        list = list + 1;
+        list = list + "</li>";
+        list = list + "<li>";
+        list = list + 2;
+        list = list + "</li>";
+        list = list + "<li>";
+        list = list + 3;
+        list = list + "</li>";
+        list = list + "</ul>";
         function button1Pressed() {
             document.getElementById("result").innerHTML = list;
-            for (var i = 0; i < 4; i++)
+
+
         }
     </script>
 </head>
