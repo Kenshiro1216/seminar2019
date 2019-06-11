@@ -1,0 +1,30 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/tdbs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        function button1pressed() {
+            var tweettable = [];
+            var tweet = {};
+            var table = "<table border=1px><tr><td>sid</td><td>tweet</td><td>date</td></tr>";
+            tweettable.push({ sid: '18110001', tweet: 'あいうえお', date: '12:00' });
+            tweettable.push({ sid: '18110002', tweet: 'かきくけこ', date: '1:00' });
+            tweettable.push({ sid: '18110003', tweet: 'さしすせそ', date: '2:00' });
+            for (var i = 0; i < tweettable.length; i++) {
+                table = table + "<tr><td>" + tweettable[i].sid + "</td><td>" + tweettable[i].tweet + "</td><td>" + tweettable[i].date + "</td></tr>";
+            }
+            table = table + "</table>"
+            document.getElementById("result").innerHTML = table;
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="button1pressed()">表示</button>
+    <hr>
+    <p id="result"></p>
+</body>
+
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/tdbs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        function button1pressed() {
+            var student = {};
+            var table = "<table border=1px><tr><td>lname</td><td>gender</td><td>age</td></tr><tr><td>";
+            student.lname = '吉田';
+            student.gender = '男';
+            student.age = '20';
+            table = table + student.lname + "</td><td>" + student.gender + "</td><td>" + student.age + "</td></tr></table>";
+
+            document.getElementById("result").innerHTML = table;
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="button1pressed()">表示</button>
+    <hr>
+    <p id="result"></p>
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/tdbs/jquery/1.9.1/jquery.min.js"></script>
+    <script>
+        function button1pressed() {
+            var fruits = [];
+            var table = "<table border=1px>"
+            fruits.push("りんご");
+            fruits.push("みかん");
+            fruits.push("ばなな");
+            for (var i = 0; i < fruits.length; i++) {
+                table = table + "<tr><td>" + i + "</td>";
+                table = table + "<td>" + fruits[i] + "</td></tr>";
+            }
+            table = table + "</table>";
+            document.getElementById("result").innerHTML = table;
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="button1pressed()">表示</button>
+    <hr>
+    <p id="result"></p>
+
+
+</body>
+
+
+
+</html>

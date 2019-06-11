@@ -9,7 +9,9 @@
             var list = "";
             list = list + "<ul>";
             for (var i = 1; i <= 4; i++) {
-                list = list + "<li>" + i + "</li>";
+                list = list + "<li>";
+                list = list + i;
+                list = list + "</li>";
             }
             list = list + "</ul>";
             document.getElementById("result").innerHTML = list;
